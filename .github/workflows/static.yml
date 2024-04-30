@@ -22,7 +22,7 @@ jobs:
     - name: Run just-testing.py
       run: python just-testing.py
       
- run_python_script_2:
+  run_python_script_2:
     needs: run_python_script
     name: Run duck.py 
     runs-on: ubuntu-latest
