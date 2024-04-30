@@ -22,7 +22,7 @@ def generate_qr_code(text, filename):
 
 if __name__ == "__main__":
     # Input the text you want to encode into the QR code
-    text = input("Enter the text to encode into QR code: ")
+    text = input("NO ZONE AREA: ")
 
     # Specify the filename to save the QR code image
     filename = "output_qr_code.png"
