@@ -21,5 +21,23 @@ jobs:
 
     - name: Run just-testing.py
       run: python just-testing.py
+      
+ run_python_script_2:
+    needs: run_python_script
+    name: Run duck.py 
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12' # Use the Python version you need
+
+    - name: Run duck.py 
+      run: python duck.py
+      
   
     
