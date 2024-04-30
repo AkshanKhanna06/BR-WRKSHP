@@ -1,1 +1,1 @@
-printf("THIS IS A NO ZONE")
+print("THIS IS A NO ZONE")
