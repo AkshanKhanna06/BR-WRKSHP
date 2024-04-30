@@ -1,5 +1,4 @@
-
-name: Python Script Workflow
+name: Matrix Workflow
 
 on:
   push:
@@ -8,7 +7,7 @@ on:
 
 jobs:
   run_python_script:
-    name: Run juesttingcode.py
+    name: Run Matrix.py
     runs-on: ubuntu-latest
 
     steps:
@@ -23,5 +22,5 @@ jobs:
     - name: Install dependencies
       run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
 
-    - name: Run juesttingcode.py
-      run: python juesttestingcode.py
+    - name: Run Matrix.py
+      run: python Matrix.py
