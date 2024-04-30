@@ -1,0 +1,27 @@
+name: Generate QR Code
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  generate_qr_code_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        pip install qrcode[pil]
+
+    - name: Run Python script
+      run: python QR.py
